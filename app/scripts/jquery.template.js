@@ -7,7 +7,7 @@ $(function() {
 		$bf_dishes				= $('#bf_dishes > li > a'),
 		
 		$bf_background			= $('#bf_background'),
-		$bg_image				= $bf_background.children('img'),
+		$bg_image				= $bf_background.children('div.bf_image'),
 		$bf_overlay				= $bf_background.children('.bf_overlay'),
 		$bf_prev				= $('#bf_prev'),
 		$bf_next				= $('#bf_next'),

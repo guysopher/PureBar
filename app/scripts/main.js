@@ -180,7 +180,7 @@ $(function() {
             var animated				= false,
                 animSpeed				= 700,
                 current					= 0,
-                defaultImage			= 'images/background/default.jpg',
+                defaultImage			= '/images/background/default.jpg',
 
                 init					= function(position) {
                     initEventsHandler();

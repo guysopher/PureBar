@@ -516,17 +516,32 @@ function loadIngredients(){
         Apples: "Good source of vitamins A, B and C and riboflavin, pectin and boron.",
         Beets: "Excellent source of vitamin A, potassium and the enzyme betaine.",
         Ginger: "A good source of Vitamin C, magnesium, copper, potassium, and manganese.",
+        Honey: "Honey contains flavonoids, which are powerful antioxidants.",
+        Kale: "Excellent antioxidant source of Vitamins A and C, iron, folic acid, calcium and potassium.",
+        Carrots: "Rich in Vitamins A, B and C, antioxidants, calcium, potassium and sodium.",
+        Lemon: "High in vitamin C and limonene.",
+        Celery: "A good source of vitamins A, B6, C and K, calcium, magnesium and phosphorous.",
+        Nutmeg: "This super spice is a good source of copper, magnesium, iron, phosphorous and B vitamins.",
+        Cinnamon: "This super spice has vitamin K, iron and calcium.",
+        Parsley: "One of the richest sources of vitamin C.",
+        Clove: "Another super spice, cloves have vitamins C, E and K, calcium, iron and magnesium.",
+        'Purple Cabbage': "A great source of choline and high in vitamin E.",
+        Cucumber: "A source of vitamin A, potassium, and iron.",
+        Spinach: "High in vitamins E, A and C, this antioxidant is a good source of calcium, iron, potassium, protein, choline, folic acid, and lutein.",
     }
 
     for (var i in ingredients){
+
+        var filename = i.toLowerCase().replace(' ','_');
+
         previewItem = $(previewItemTemplate);
-        previewItem.find('.bf_dishes_bg').css('background-image', 'url(images/ingredients/'+ i.toLowerCase()+'.jpg)').attr('title', i);
+        previewItem.find('.bf_dishes_bg').css('background-image', 'url(images/ingredients/'+ filename+'.jpg)').attr('title', i);
         previewContainer.append(previewItem);
 
         galleryItem = $(galleryItemTemplate);
         galleryItem.find('.bf_heading h2').html(i);
         galleryItem.find('.bf_desc p').html(ingredients[i]);
-        galleryItem.find('.bf_gallery_item_image').attr('src', 'images/ingredients/'+ i.toLowerCase()+'.jpg').attr('data-bgimg', 'images/ingredients/'+ i.toLowerCase()+'.jpg');
+        galleryItem.find('.bf_gallery_item_image').attr('src', 'images/ingredients/'+ filename+'.jpg').attr('data-bgimg', 'images/ingredients/'+ filename+'.jpg');
         galleryContainer.append(galleryItem);
     }
 }

@@ -22,9 +22,9 @@ $(function() {
         BGMap					= (function() {
             var map,
                 $mapEl		= $('#map'),
-                address		= 'Fondamenta Beata Giuliana 4, Venezia',
-                lat			= 45.428688849691014,
-                lng			= 12.317744493484497,
+                address		= '426 Main St, Ridgefield, CT 06877',
+                lat			= 41.2820325,
+                lng			= -73.4984549,
                 display		= false,
 
                 showMap		= function() {
@@ -34,7 +34,7 @@ $(function() {
 
                     var point 		= new google.maps.LatLng(lat,lng),
                         mapOptions 	= {
-                            zoom						: 18,
+                            zoom						: 17,
                             center						: point,
                             mapTypeId					: google.maps.MapTypeId.HYBRID,
                             mapTypeControl				: false,
@@ -59,8 +59,8 @@ $(function() {
 
                     resizeMap();
 
-                    var coordInfoWindow = new google.maps.InfoWindow({maxWidth : 10}),
-                        latlngStr 		= address + "<br />LatLng: " + lat + " , " + lng + "<br />";
+                    var coordInfoWindow = new google.maps.InfoWindow(),
+                        latlngStr 		= 'Pure Bar <br/>' + address;
 
                     coordInfoWindow.setContent(latlngStr);
                     coordInfoWindow.setPosition(point);

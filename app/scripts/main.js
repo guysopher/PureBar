@@ -527,7 +527,7 @@ function loadIngredients(){
         Clove: "Another super spice, cloves have vitamins C, E and K, calcium, iron and magnesium.",
         'Purple Cabbage': "A great source of choline and high in vitamin E.",
         Cucumber: "A source of vitamin A, potassium, and iron.",
-        Spinach: "High in vitamins E, A and C, this antioxidant is a good source of calcium, iron, potassium, protein, choline, folic acid, and lutein.",
+        Spinach: "High in vitamins E, A and C, calcium, iron, potassium, protein, choline, folic acid, and lutein.",
     }
 
     for (var i in ingredients){

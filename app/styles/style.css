@@ -103,7 +103,7 @@ h1.title span{
 	background:transparent url(/images/bg_black.png) repeat top left;
 }
 .bf_content_text h2{
-	padding:30px 20px 5px 20px;
+	padding:30px 20px 12px 20px;
 	color:#fff;
 	font-size:30px;
 	text-shadow:0px 0px 1px #fff;
@@ -111,9 +111,17 @@ h1.title span{
 .bf_content_text p{
 	padding:5px 20px;
 	font-size:19px;
+    font-weight: 400;
     line-height: 1.4em;
 	font-family: 'PT Sans', Arial, sans-serif;
 	color:#fff;
+}
+.bf_content_text p a{
+    color:#fff;
+    cursor: pointer;
+}
+.bf_content_text p a:hover{
+    text-decoration: underline;
 }
 .bf_content_text ul{
 	margin: 20px 0px 0px 24px;

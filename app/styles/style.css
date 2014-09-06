@@ -92,7 +92,7 @@ h1.title span{
 	display:none;
 }
 .bf_content_text{
-	width:300px;
+	width:520px;
 	position:fixed;
 	top:142px;
 	left:300px;
@@ -127,7 +127,7 @@ h1.title span{
     opacity: 0.6;
     background-size: cover;
     background-position: center;
-    width: 118px;
+    width: 110px;
     height: 50px;
     transition: all 0.5s ease-in-out;
     /* border-radius: 3px; */

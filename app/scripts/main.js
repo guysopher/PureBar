@@ -1,4 +1,6 @@
 $(function() {
+    loadIngredients();
+
     var	$bf_page_menu			= $('#bf_page_menu'),
         $bf_menu_items			= $bf_page_menu.find('a'),
         $bf_container			= $('#bf_container'),
@@ -497,5 +499,59 @@ $(function() {
             };
         })();
 
+
     Template.init();
 });
+
+function loadIngredients(){
+
+    var galleryContainer = $('.bf_gallery_wrapper');
+    var galleryItemTemplate = '<div class="bf_gallery_item"><div class="bf_heading"><h2></h2></div><div class="bf_desc"><p></p></div><img class="bf_gallery_item_image" /></div>';
+
+    var previewContainer = $('#bf_dishes');
+    var previewItemTemplate = '<li><a href="#"><div class="bf_dishes_bg"></div></a></li>';
+
+    var ingredients = {
+        Almonds: "Fabulous source of vitamin E, fiber, fatty acids, calcium, magnesium, phosphorous and antioxidants.",
+        Apples: "Good source of vitamins A, B and C and riboflavin, pectin and boron.",
+        Beets: "Excellent source of vitamin A, potassium and the enzyme betaine.",
+        Ginger: "A good source of Vitamin C, magnesium, copper, potassium, and manganese.",
+    }
+
+    for (var i in ingredients){
+        previewItem = $(previewItemTemplate);
+        previewItem.find('.bf_dishes_bg').css('background-image', 'url(images/ingredients/'+ i.toLowerCase()+'.jpg)').attr('title', i);
+        previewContainer.append(previewItem);
+
+        galleryItem = $(galleryItemTemplate);
+        galleryItem.find('.bf_heading h2').html(i);
+        galleryItem.find('.bf_desc p').html(ingredients[i]);
+        galleryItem.find('.bf_gallery_item_image').attr('src', 'images/ingredients/'+ i.toLowerCase()+'.jpg').attr('data-bgimg', 'images/ingredients/'+ i.toLowerCase()+'.jpg');
+        galleryContainer.append(galleryItem);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -21,6 +21,7 @@
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.3.7, RVM: ruby-1.9.3-p448) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.39, RVM: ruby-1.9.3-p448) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.5.0, RVM: ruby-1.9.3-p448) [gem]" level="application" />
+    <orderEntry type="library" name="PureBar node_modules" level="project" />
   </component>
 </module>
 

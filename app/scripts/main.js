@@ -445,8 +445,6 @@ $(function() {
                         var item	= $(this).data('content');
                         if(item === 'visit') {
                             BGMap.showMap();
-                        }else if(item === 'menu') {
-                            window.open('/images/menu.pdf');
                         } else{
                             $.when( BGImageController.fadeBG(true) ).done(function(){
                                 BGMap.hideMap();

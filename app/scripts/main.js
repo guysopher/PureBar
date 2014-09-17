@@ -2,7 +2,7 @@ $(function() {
     loadIngredients();
 
     var	$bf_page_menu			= $('#bf_page_menu'),
-        $bf_menu_items			= $bf_page_menu.find('a'),
+        $bf_menu_items			= $bf_page_menu.find('a.menu-item'),
         $bf_container			= $('#bf_container'),
         $bf_pages				= $bf_container.children('.bf_page'),
         $pageTitle				= $bf_page_menu.children('.title'),
@@ -445,6 +445,8 @@ $(function() {
                         var item	= $(this).data('content');
                         if(item === 'visit') {
                             BGMap.showMap();
+                        }else if(item === 'menu') {
+                            window.open('/images/menu.pdf');
                         } else{
                             $.when( BGImageController.fadeBG(true) ).done(function(){
                                 BGMap.hideMap();

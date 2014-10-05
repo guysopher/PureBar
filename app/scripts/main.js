@@ -440,6 +440,7 @@ $(function() {
                     $bf_menu_items.bind('click', function(e) {
                         var $item	= $(this);
 
+                        window.scrollTo(1,0);
                         hidePageContent();
 
                         var item	= $(this).data('content');

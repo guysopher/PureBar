@@ -478,6 +478,7 @@ $(function() {
                 },
                 initPhotoSlider			= function(position) {
                     //initialize the photos slider
+                    $('.floater-phone').hide();
                     BGSlider.init(position);
                     //hide the photo thumbs and show the slider section
                     $bf_gallery.show().siblings().fadeOut(animSpeed/2);
@@ -491,6 +492,7 @@ $(function() {
                 },
                 reset					= function() {
                     $bf_gallery.hide().siblings().fadeIn(animSpeed);
+                    $('.floater-phone').show();
                     togglePageMenu(true);
                 };
 
